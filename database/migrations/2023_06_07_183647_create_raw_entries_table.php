@@ -21,7 +21,7 @@ return new class extends Migration
             $table->id();
             $table->string('employee_id');
             $table->enum('entry_type',['entry','exit']);
-            $table->timestamp('input_time');
+            $table->dateTime('input_time');
             $table->timestamps();
         });
     }
